@@ -1,0 +1,18 @@
+# DO NOT EXECUTE THE WHOLE SCRIPT
+# Copy and paste required parts to terminal
+
+# Find SD card disk number
+diskutil list
+
+# Set variable
+EXPORT SD_DISK= #for example disk2
+
+diskutil unmountDisk /dev/$SD_DISK
+
+#Uncomment and execute to install xubuntu-xenial-mate
+#sudo dd bs=1m if=xubuntu-xenial-mate-20161215-longsleep-pine64-8GB.img of=/dev/r$SD_DISK
+
+#Uncomment and execute to install headless ubuntu-16.04.2-server-arm64
+#sudo dd bs=1m if=ubuntu-16.04.2-server-arm64.iso of=/dev/r$SD_DISK
+
+sudo diskutil eject /dev/r$SD_DISK
