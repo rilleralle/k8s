@@ -5,7 +5,7 @@
 diskutil list
 
 # Set variable
-EXPORT SD_DISK= #for example disk2
+export SD_DISK= #for example disk2
 
 diskutil unmountDisk /dev/$SD_DISK
 
