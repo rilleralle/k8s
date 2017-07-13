@@ -3,7 +3,7 @@ echo 'Update'
 apt-get update 
 
 echo 'Upgrade'
-apt-get upgrade
+apt-get -y upgrade
 
 echo 'Install docker'
 apt-get -y install docker.io 
