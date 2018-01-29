@@ -12,7 +12,7 @@ diskutil unmountDisk /dev/$SD_DISK
 #Uncomment and execute to install xubuntu-xenial-mate
 #sudo dd bs=1m if=xubuntu-xenial-mate-20161215-longsleep-pine64-8GB.img of=/dev/r$SD_DISK
 
-#Uncomment and execute to install headless ubuntu-16.04.2-server-arm64
-#sudo dd bs=1m if=ubuntu-16.04.2-server-arm64.iso of=/dev/r$SD_DISK
+#Uncomment and execute to install headless xenial-pine64
+#sudo dd bs=1m if=xenial-pine64-bspkernel-20161218-1.img of=/dev/r$SD_DISK
 
 sudo diskutil eject /dev/r$SD_DISK
